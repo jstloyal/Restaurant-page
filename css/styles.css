@@ -1,0 +1,56 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('/images/background.jpg');
+  background-position: cover;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-size: 4.5rem;
+  padding: 1rem;
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer div {
+  position: absolute;
+  box-sizing: border-box;
+  overflow: hidden;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 1rem 0.5rem;
+  text-align: center;
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  background-color: rgba(236, 81, 81, 0.3);
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: white;
+}
