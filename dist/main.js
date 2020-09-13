@@ -94,7 +94,19 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_navigation__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/navigation */ \"./src/js/navigation.js\");\n/* harmony import */ var _js_home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/home */ \"./src/js/home.js\");\n\n // console.log(\"Hello World\")\n\nvar content = document.querySelector('#content');\ncontent.appendChild(_js_navigation__WEBPACK_IMPORTED_MODULE_0__[\"navbar\"]);\ncontent.appendChild(_js_home__WEBPACK_IMPORTED_MODULE_1__[\"home\"]);\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_navigation__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/navigation */ \"./src/js/navigation.js\");\n/* harmony import */ var _js_home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/home */ \"./src/js/home.js\");\n/* harmony import */ var _js_footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/footer */ \"./src/js/footer.js\");\n\n\n // console.log(\"Hello World\")\n\nvar content = document.querySelector('#content');\ncontent.appendChild(_js_navigation__WEBPACK_IMPORTED_MODULE_0__[\"navbar\"]);\ncontent.appendChild(_js_home__WEBPACK_IMPORTED_MODULE_1__[\"home\"]);\ncontent.appendChild(_js_footer__WEBPACK_IMPORTED_MODULE_2__[\"footer\"]);\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/js/footer.js":
+/*!**************************!*\
+  !*** ./src/js/footer.js ***!
+  \**************************/
+/*! exports provided: footer */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"footer\", function() { return footer; });\nvar footer = function () {\n  var footer = document.createElement('footer');\n  var myFooter = document.createElement('div');\n  myFooter.textContent = 'Copyright | MamaPut | 2020';\n  footer.appendChild(myFooter);\n  return footer;\n}();\n\n//# sourceURL=webpack:///./src/js/footer.js?");
 
 /***/ }),
 
