@@ -13,20 +13,53 @@ body {
   background-position: cover;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 
 h1 {
   font-size: 4.5rem;
   padding: 1rem;
+  margin: 1rem;
   color: whitesmoke;
-  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 5rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  animation: insert 1s linear 1 forwards;
+  text-shadow: 0 0 8px rgb(197, 160, 91);
 }
 
-#content {
+@@keyframes insert {
+  0% {
+    transform: translateX(-50%) scale(0.7);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateX(0%) scale(1%);
+    opacity: 1;
+  }
+}
+
+#mySlogan {
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+
+#homeInfo {
+  justify-content: center;
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  width: 50rem !important;
+}
+
+#homeInfo p {
+  font-size: 2rem !important;
+  color: whitesmoke;
+  text-shadow: 0 0 2px rgb(197, 160, 91);
+  align-self: center;
   justify-content: center;
 }
 

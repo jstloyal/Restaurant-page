@@ -11,10 +11,14 @@ export const navbar = (() => {
   const listThree = document.createElement('li');
   listThree.textContent = 'Contact';
   listThree.setAttribute('id', 'contactList');
+  const listFour = document.createElement('li');
+  listFour.textContent = 'About';
+  listFour.setAttribute('id', 'aboutList');
 
   ul.appendChild(listOne);
   ul.appendChild(listTwo);
   ul.appendChild(listThree);
+  ul.appendChild(listFour);
   navigationMenu.appendChild(ul);
   return navigationMenu;
 })();

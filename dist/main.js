@@ -94,7 +94,19 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_navigation__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/navigation */ \"./src/js/navigation.js\");\n// import 'css/styles.css';\n // console.log(\"Hello Webpack\")\n\nvar content = document.querySelector('#content');\ncontent.appendChild(_js_navigation__WEBPACK_IMPORTED_MODULE_0__[\"navbar\"]);\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_navigation__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/navigation */ \"./src/js/navigation.js\");\n/* harmony import */ var _js_home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/home */ \"./src/js/home.js\");\n\n // console.log(\"Hello World\")\n\nvar content = document.querySelector('#content');\ncontent.appendChild(_js_navigation__WEBPACK_IMPORTED_MODULE_0__[\"navbar\"]);\ncontent.appendChild(_js_home__WEBPACK_IMPORTED_MODULE_1__[\"home\"]);\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/js/home.js":
+/*!************************!*\
+  !*** ./src/js/home.js ***!
+  \************************/
+/*! exports provided: home */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"home\", function() { return home; });\nvar home = function () {\n  var homePage = document.createElement('div');\n  homePage.setAttribute('id', 'mySlogan');\n  var myMotto = document.createElement('h1');\n  myMotto.setAttribute('id', 'myMotto');\n  myMotto.textContent = 'HEALTHY HOME-MADE MEAL FOR YOU';\n  var info = document.createElement('div');\n  info.setAttribute('id', 'homeInfo');\n  var paragraph = document.createElement('p');\n  paragraph.textContent = 'Every meal starts with locally sourced ingredients. Real taste of African dish is guaranteed!';\n  homePage.appendChild(myMotto);\n  info.appendChild(paragraph);\n  homePage.appendChild(info);\n  return homePage;\n}();\n\n//# sourceURL=webpack:///./src/js/home.js?");
 
 /***/ }),
 
@@ -106,7 +118,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"navbar\", function() { return navbar; });\nvar navbar = function () {\n  var navigationMenu = document.createElement('nav');\n  navigationMenu.setAttribute('id', 'mainNav');\n  var ul = document.createElement('ul');\n  var listOne = document.createElement('li');\n  listOne.textContent = 'Home';\n  listOne.setAttribute('id', 'homeList');\n  var listTwo = document.createElement('li');\n  listTwo.textContent = 'Menu';\n  listTwo.setAttribute('id', 'menuList');\n  var listThree = document.createElement('li');\n  listThree.textContent = 'Contact';\n  listThree.setAttribute('id', 'contactList');\n  ul.appendChild(listOne);\n  ul.appendChild(listTwo);\n  ul.appendChild(listThree);\n  navigationMenu.appendChild(ul);\n  return navigationMenu;\n}();\n\n//# sourceURL=webpack:///./src/js/navigation.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"navbar\", function() { return navbar; });\nvar navbar = function () {\n  var navigationMenu = document.createElement('nav');\n  navigationMenu.setAttribute('id', 'mainNav');\n  var ul = document.createElement('ul');\n  var listOne = document.createElement('li');\n  listOne.textContent = 'Home';\n  listOne.setAttribute('id', 'homeList');\n  var listTwo = document.createElement('li');\n  listTwo.textContent = 'Menu';\n  listTwo.setAttribute('id', 'menuList');\n  var listThree = document.createElement('li');\n  listThree.textContent = 'Contact';\n  listThree.setAttribute('id', 'contactList');\n  var listFour = document.createElement('li');\n  listFour.textContent = 'About';\n  listFour.setAttribute('id', 'aboutList');\n  ul.appendChild(listOne);\n  ul.appendChild(listTwo);\n  ul.appendChild(listThree);\n  ul.appendChild(listFour);\n  navigationMenu.appendChild(ul);\n  return navigationMenu;\n}();\n\n//# sourceURL=webpack:///./src/js/navigation.js?");
 
 /***/ })
 
