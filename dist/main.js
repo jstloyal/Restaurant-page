@@ -90,10 +90,23 @@
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("console.log(\"Hello Webpack\");\n\n//# sourceURL=webpack:///./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_navigation__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/navigation */ \"./src/js/navigation.js\");\n// import 'css/styles.css';\n // console.log(\"Hello Webpack\")\n\nvar content = document.querySelector('#content');\ncontent.appendChild(_js_navigation__WEBPACK_IMPORTED_MODULE_0__[\"navbar\"]);\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/js/navigation.js":
+/*!******************************!*\
+  !*** ./src/js/navigation.js ***!
+  \******************************/
+/*! exports provided: navbar */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"navbar\", function() { return navbar; });\nvar navbar = function () {\n  var navigationMenu = document.createElement('nav');\n  navigationMenu.setAttribute('id', 'mainNav');\n  var ul = document.createElement('ul');\n  var listOne = document.createElement('li');\n  listOne.textContent = 'Home';\n  listOne.setAttribute('id', 'homeList');\n  var listTwo = document.createElement('li');\n  listTwo.textContent = 'Menu';\n  listTwo.setAttribute('id', 'menuList');\n  var listThree = document.createElement('li');\n  listThree.textContent = 'Contact';\n  listThree.setAttribute('id', 'contactList');\n  ul.appendChild(listOne);\n  ul.appendChild(listTwo);\n  ul.appendChild(listThree);\n  navigationMenu.appendChild(ul);\n  return navigationMenu;\n}();\n\n//# sourceURL=webpack:///./src/js/navigation.js?");
 
 /***/ })
 

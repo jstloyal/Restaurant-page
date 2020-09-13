@@ -30,6 +30,35 @@ h1 {
   justify-content: center;
 }
 
+nav {
+  position: relative;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12rem;
+  color: whitesmoke;
+  /* padding: 1rem; */
+  margin: 1rem;
+  cursor: pointer;
+}
+
 footer div {
   position: absolute;
   box-sizing: border-box;
