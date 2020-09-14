@@ -87,11 +87,283 @@ nav li {
   justify-content: center;
   width: 12rem;
   color: whitesmoke;
-  /* padding: 1rem; */
   margin: 1rem;
   cursor: pointer;
 }
 
+/******about**************/
+#aboutContent {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  overflow: auto;
+  width: 75%;
+  height: 90vh;
+  margin: 4rem auto 5rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+#aboutText {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  margin: auto 2rem;
+  z-index: 3;
+  padding: 0rem 3rem 2rem;
+}
+
+#aboutText h2 {
+  margin-right: 10rem;
+  font-size: 3rem;
+  color: rgb(197, 160, 91);
+  text-shadow: 0 0 1px whitesmoke;
+  font-family: 'Rowdies', cursive;
+  border-bottom: 3px solid rgb(197, 160, 91);
+}
+
+#aboutText h2:hover {
+  color: rgb(218, 156, 42);
+  text-shadow: 0 0 1px whitesmoke ;
+  border-bottom: 2px solid rgb(230, 115, 115);
+  cursor: default;
+}
+
+#aboutText p {
+  width: 90%;
+  padding: 1rem 5rem;
+  font-size: 1.7rem;
+  font-family: 'Mulish', sans-serif;
+  color: whitesmoke;
+  text-shadow: 0 0 2px rgb(197, 160, 91);
+  animation: insertItem 0.7s linear 1 forwards;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#aboutImg {
+  width: 30%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin: auto 2rem;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+#kitchen {
+  position: absolute;
+  top: 7rem;
+  width: 500px;
+  height: 35rem;
+  z-index: 1;
+  border-radius: 2px;
+  box-shadow: 0 0 7px 1px rgba(197, 160, 91, 0.5);
+  cursor: pointer;
+  animation: imgRightInsert 0.8s linear 1 forwards;
+}
+
+#kitchen:hover {
+  box-shadow: 0 0 10px 1px rgba(197, 160, 91, 0.75);
+  z-index: 100;
+}
+
+#meal{
+    position: absolute;
+    top: 34rem;
+    right: 20rem;
+    width: 33rem;
+    height: 43rem;
+    z-index: 2;
+    border-radius: 2px;
+    box-shadow: 0 0 7px 1px rgba(197, 160, 91, 0.5);
+    animation: imgBottomInsert 0.8s linear 1 forwards;
+    cursor: pointer;
+
+}
+
+#meal:hover {
+    z-index: 100;
+    box-shadow: 0 0 10px 1px rgba(197, 160, 91, 0.75);
+}
+
+/************scrollbar**************/
+
+::-webkit-scrollbar{
+    width: 1rem;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent, rgb(197, 160, 91));
+    border-radius: 5px;
+}
+
+/************contact****************/
+#contactContent {
+  position: relative;
+  overflow: auto;
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 3rem;
+  justify-content: center;
+  width: 80%;
+  height: 100vh;
+  margin: 4rem auto 5rem;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+  animation: insertItem 0.6s linear 1 forwards;
+}
+
+#contactInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  height: 80%;
+  width: 30%;
+  /* background-color: rgb(91, 91, 207); */
+  margin-left: 1rem;
+}
+
+#contactInfo * {
+  animation: insertItem 0.8s linear 1 forwards;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: flex-end;
+  margin-bottom: 2rem;
+}
+
+#message {
+  margin-bottom: 0rem;
+}
+
+.icon {
+  margin: 1rem;
+  align-self: flex-start;
+}
+
+.icon img {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+#contactInfo h2 {
+  font-size: 3rem;
+  font-family: 'Rowdies', cursive;
+  color: rgb(197, 160, 91);
+  text-shadow: 0 0 1px whitesmoke;
+  border-bottom: 2px solid rgb(197, 160, 91);
+  margin-left: 3.5rem;
+}
+
+#contactInfo h3 {
+  font-size: 2rem;
+  font-family: 'Rowdies', cursive;
+  color: rgb(197, 160, 91);
+  text-shadow: 0 0 1px whitesmoke;
+  border-bottom: 1px solid rgb(197, 160, 91);
+  margin: 0.5rem 0.5rem 2rem;
+}
+
+#contactInfo p {
+  font-size: 1.7rem;
+  font-family: 'Mulish', sans-serif;
+  color: whitesmoke;
+  text-shadow: 0 0 2px rgb(197, 160, 91);
+  margin: 0.5rem 0.5rem 2rem;
+  cursor: default;
+}
+
+#contactInfo a:hover p {
+  color: rgb(197, 160, 91);
+  text-shadow: 0 0 2px whitesmoke;
+  border-bottom: 1px solid rgb(197, 160, 91);
+  cursor: pointer;
+}
+
+#contactInfo a {
+  text-decoration: none;
+}
+
+#emailSender form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 3rem;
+  padding-left: 1rem;
+}
+
+#emailSender form * {
+  padding: 0.5rem 0.2rem;
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  font-family: 'Mulish', sans-serif;
+  color: whitesmoke;
+  border: none;
+  border-bottom: 1px solid whitesmoke;
+  background-color: transparent;
+  outline: none;
+  resize: none;
+}
+
+#emailSender #send{
+  padding: 1rem 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(197, 160, 91);
+  border: 1px solid rgb(197, 160, 91);
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: all 0.5s;
+}
+
+#emailSender #send:hover{
+  background-color: rgb(197, 160, 91);
+  color: rgb(22, 18, 18);
+}
+
+#numberFont {
+  font-weight: 700;
+}
+/************map*************/
+#contactMaps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70%;
+  width: 60%;
+  /* background-color: red; */
+  margin-top: 10rem;
+
+}
+#map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid rgb(197, 160, 91);
+  box-shadow: 0 0 7px 2px rgba(197, 160, 91, 0.7);
+  border-radius: 5px;
+  z-index: 1;
+  animation: insertItem 0.7s linear 1 forwards;
+}
+
+/********footer*******/
 footer div {
   position: absolute;
   box-sizing: border-box;
