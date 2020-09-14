@@ -207,6 +207,8 @@ nav li {
     border-radius: 5px;
 }
 
+
+
 /************contact****************/
 #contactContent {
   position: relative;
@@ -268,7 +270,7 @@ nav li {
   color: rgb(197, 160, 91);
   text-shadow: 0 0 1px whitesmoke;
   border-bottom: 2px solid rgb(197, 160, 91);
-  margin-left: 3.5rem;
+  margin-left: 0px;
 }
 
 #contactInfo h3 {
@@ -305,8 +307,8 @@ nav li {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  margin-left: 3rem;
-  padding-left: 1rem;
+  margin-left: 0px;
+  padding-left: 0px;
 }
 
 #emailSender form * {
