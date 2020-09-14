@@ -223,7 +223,7 @@ nav li {
 }
 
 #menu{
-  width: 20%;
+  width: 50%;
   height: 80%;
   display: flex;
   flex-direction: column;
@@ -237,7 +237,7 @@ nav li {
   list-style: none;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
   justify-content: start;
   padding: 0rem 2rem 2rem;
   margin-top: -2.5rem;
@@ -316,37 +316,6 @@ nav li {
       transform: translateY(0);
       opacity: 1;
   }
-}
-
-.menuItemHeader {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: rgb(197, 160, 91);
-  text-shadow: 0 0 1px whitesmoke;
-  font-family: 'Rowdies', cursive;
-  border-bottom: 1px solid rgb(197, 160, 91);
-}
-
-.menuItemHeader .name {
-  justify-self: start;
-  font-size: 2.5rem;
-  margin: 0.5rem 0;
-}
-
-.menuItemHeader .price {
-  justify-self: end !important;
-  font-size: 2rem;
-}
-
-.menuItemDescription p {
-  margin: 1rem 0;
-  padding: 1rem 0;
-  width: 70%;
-  font-size: 2rem;
-  color: #CCCCCC;
-  font-family: 'Mulish', sans-serif;
-  text-shadow: 0 0 3px rgb(156, 127, 73);
 }
 
 /************contact****************/

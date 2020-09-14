@@ -13,7 +13,6 @@ export const about = (() => {
   secondImg.setAttribute('src', 'images/Afang.jpg');
   secondImg.setAttribute('alt', 'afang soup');
   aboutImages.appendChild(firstImg);
-  // aboutImages.appendChild(secondImg);
 
   const aboutText = document.createElement('div');
   aboutText.setAttribute('id', 'aboutText');
