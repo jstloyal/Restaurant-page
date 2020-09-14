@@ -100,7 +100,7 @@ nav li {
   justify-content: space-around;
   overflow: auto;
   width: 75%;
-  height: 90vh;
+  height: 60vh;
   margin: 4rem auto 5rem;
   background-color: rgba(0, 0, 0, 0.9);
   border-radius: 10px;
@@ -164,8 +164,8 @@ nav li {
 #kitchen {
   position: absolute;
   top: 7rem;
-  width: 500px;
-  height: 35rem;
+  width: 400px;
+  height: 400px;
   z-index: 1;
   border-radius: 2px;
   box-shadow: 0 0 7px 1px rgba(197, 160, 91, 0.5);
@@ -507,7 +507,7 @@ nav li {
 
 /********footer*******/
 footer div {
-  position: absolute;
+  position: fixed;
   box-sizing: border-box;
   overflow: hidden;
   bottom: 0;

@@ -5,6 +5,7 @@ export const navbar = (() => {
   const listOne = document.createElement('li');
   listOne.textContent = 'Home';
   listOne.setAttribute('id', 'homeList');
+  listOne.setAttribute('class', 'active')
   const listTwo = document.createElement('li');
   listTwo.textContent = 'Menu';
   listTwo.setAttribute('id', 'menuList');
