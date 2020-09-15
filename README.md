@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://github.com/jstloyal/Restaurant-page">
-    <img src="images/JS-logo1.jpg" alt="JS Logo" width="80" height="80">
+    <img src="images/JS-logo1.jpg" alt="JS Logo" width="110" height="110">
   </a>
 
   <p align="center">
