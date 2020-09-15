@@ -10,8 +10,8 @@
 <!-- PROJECT SHIELDS -->
 
 <p align="center">
-  <a href="https://github.com/jstloyal/Library">
-    <img src="img/microverse.png" alt="Microverse Logo" width="80" height="80">
+  <a href="https://github.com/jstloyal/Restaurant-page">
+    <img src="imagesg/JS-logo1.png" alt="Microverse Logo" width="80" height="80">
   </a>
 
   <p align="center">
@@ -37,12 +37,12 @@ This Restaurant website was built using DOM manipulation by dynamically renderin
 - About page (The restaurant history)
 
 <p align="center">
-  <a href="https://github.com/jstloyal/Library">
+  <a href="https://github.com/jstloyal/Restaurant-page">
     <img src="images/mamaPut.png" alt="Microverse Logo" width="750" height="300">
   </a>
 </p>
 
-[Project live link](https://jstloyal.github.io/Tic-Tac-Toe/)
+[Project live link](https://jstloyal.github.io/Restaurant-page/)
 
 ## Contributing
 
