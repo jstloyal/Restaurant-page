@@ -42,7 +42,7 @@ This Restaurant website was built using DOM manipulation by dynamically renderin
   </a>
 </p>
 
-[Project live link](https://jstloyal.github.io/Restaurant-page/)
+[Project live link](https://rawcdn.githack.com/jstloyal/Restaurant-page/7bd586e99e04058f62da2f105d1288d9424f6ded/dist/index.html)
 
 ## Contributing
 
