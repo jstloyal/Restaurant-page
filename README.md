@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://github.com/jstloyal/Restaurant-page">
-    <img src="imagesg/JS-logo1.png" alt="Microverse Logo" width="80" height="80">
+    <img src="images/JS-logo1.png" alt="JS Logo" width="80" height="80">
   </a>
 
   <p align="center">
