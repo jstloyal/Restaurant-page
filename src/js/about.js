@@ -1,3 +1,5 @@
+import recipe from '../images/Afang.png';
+
 const about = () => {
   const section = document.createElement('section');
   section.setAttribute('id', 'aboutContent');
@@ -5,7 +7,7 @@ const about = () => {
   const aboutImages = document.createElement('div');
   aboutImages.setAttribute('id', 'aboutImg');
   const firstImg = document.createElement('img');
-  firstImg.setAttribute('src', '/dist/images/recipe.jpg');
+  firstImg.setAttribute('src', recipe);
   firstImg.setAttribute('id', 'kitchen');
   firstImg.setAttribute('alt', 'making your dish');
   const secondImg = document.createElement('img');
