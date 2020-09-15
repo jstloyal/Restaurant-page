@@ -1,0 +1,467 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('https://images.unsplash.com/photo-1447078806655-40579c2520d6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+  background-position: center;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 4.5rem;
+  padding: 1rem;
+  margin: 1rem;
+  color: whitesmoke;
+  margin-top: 5rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  animation: insert 1s linear 1 forwards;
+  text-shadow: 0 0 8px rgb(197, 160, 91);
+}
+
+#mySlogan {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#homeInfo {
+  justify-content: center;
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  width: 50rem !important;
+}
+
+.menuItem:hover p,
+.menuItem:hover .price {
+  color: whitesmoke;
+  text-shadow: 0 0 5px rgb(197, 160, 91);
+}
+
+#homeInfo p {
+  font-size: 2rem !important;
+  color: whitesmoke;
+  text-shadow: 0 0 2px rgb(197, 160, 91);
+  align-self: center;
+  justify-content: center;
+}
+
+nav {
+  position: relative;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12rem;
+  color: whitesmoke;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+#aboutContent {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  overflow: auto;
+  width: 75%;
+  height: 60vh;
+  margin: 4rem auto 5rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+#aboutText {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  margin: auto 2rem;
+  z-index: 3;
+  padding: 0 3rem 2rem;
+}
+
+.menuItem:hover h2 {
+  color: rgb(218, 156, 42);
+}
+
+#aboutText h2 {
+  margin-right: 10rem;
+  font-size: 3rem;
+  color: rgb(197, 160, 91);
+  text-shadow: 0 0 1px whitesmoke;
+  font-family: 'Rowdies', cursive;
+  border-bottom: 3px solid rgb(197, 160, 91);
+}
+
+#contactInfo h2 {
+  font-size: 3rem;
+  font-family: 'Rowdies', cursive;
+  color: rgb(197, 160, 91);
+  text-shadow: 0 0 1px whitesmoke;
+  border-bottom: 2px solid rgb(197, 160, 91);
+  margin-left: 0;
+}
+
+#aboutText h2:hover {
+  color: rgb(218, 156, 42);
+  text-shadow: 0 0 1px whitesmoke;
+  border-bottom: 2px solid rgb(230, 115, 115);
+  cursor: pointer;
+}
+
+#aboutText p {
+  width: 90%;
+  padding: 1rem 5rem;
+  font-size: 1.7rem;
+  font-family: 'Mulish', sans-serif;
+  color: whitesmoke;
+  text-shadow: 0 0 2px rgb(197, 160, 91);
+  animation: insertItem 0.7s linear 1 forwards;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#aboutImg {
+  width: 30%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin: auto 2rem;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#kitchen {
+  position: absolute;
+  top: 7rem;
+  width: 400px;
+  height: 400px;
+  z-index: 1;
+  border-radius: 2px;
+  box-shadow: 0 0 7px 1px rgba(197, 160, 91, 0.5);
+  cursor: pointer;
+  animation: imgRightInsert 0.8s linear 1 forwards;
+}
+
+#kitchen:hover {
+  box-shadow: 0 0 10px 1px rgba(197, 160, 91, 0.75);
+  z-index: 100;
+}
+
+#meal {
+  position: absolute;
+  top: 34rem;
+  right: 20rem;
+  width: 33rem;
+  height: 43rem;
+  z-index: 2;
+  border-radius: 2px;
+  box-shadow: 0 0 7px 1px rgba(197, 160, 91, 0.5);
+  animation: imgBottomInsert 0.8s linear 1 forwards;
+  cursor: pointer;
+}
+
+#meal:hover {
+  z-index: 100;
+  box-shadow: 0 0 10px 1px rgba(197, 160, 91, 0.75);
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, rgb(197, 160, 91));
+  border-radius: 5px;
+}
+
+#menuContent {
+  overflow: auto;
+  width: 75%;
+  height: 100vh;
+  margin: 4rem auto 5rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+#menu {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  justify-self: flex-start;
+  margin: 0 1rem;
+  border-radius: 5px;
+}
+
+#menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  padding: 0 2rem 2rem;
+  margin-top: -2.5rem;
+}
+
+#menu li {
+  list-style: none;
+  padding: 2rem;
+  margin: 1rem;
+  color: #ccc;
+  text-align: right;
+  font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+#menu li:hover {
+  color: whitesmoke;
+  text-shadow: 0 0 5px rgb(197, 160, 91);
+}
+
+.activeTab {
+  color: whitesmoke;
+  text-shadow: 0 0 5px rgb(197, 160, 91);
+  border-bottom: 1px solid #fc0000;
+  transition: all 0.5s;
+}
+
+#menuItems {
+  width: 60%;
+  height: 80%;
+  margin: 0 3rem;
+  padding: 0 5rem 3rem 5rem;
+  border-radius: 5px;
+  color: whitesmoke;
+}
+
+.menuItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 3;
+  cursor: pointer;
+  padding-top: 2rem;
+  margin: 0 0 1rem;
+  animation: insertItem 0.7s linear 1 forwards;
+}
+
+.menuItem:hover .menuItemHeader {
+  color: rgb(218, 156, 42);
+  text-shadow: 0 0 1px whitesmoke;
+  border-bottom: 1px solid rgb(230, 115, 115);
+}
+
+#contactContent {
+  position: relative;
+  overflow: auto;
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 3rem;
+  justify-content: center;
+  width: 80%;
+  height: 100vh;
+  margin: 4rem auto 5rem;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+  animation: insertItem 0.6s linear 1 forwards;
+}
+
+#contactInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  height: 80%;
+  width: 30%;
+  margin-left: 1rem;
+}
+
+#contactInfo * {
+  animation: insertItem 0.8s linear 1 forwards;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: flex-end;
+  margin-bottom: 2rem;
+}
+
+#message {
+  margin-bottom: 0;
+}
+
+.icon {
+  margin: 1rem;
+  align-self: flex-start;
+}
+
+.icon img {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+#contactInfo h3 {
+  font-size: 2rem;
+  font-family: 'Rowdies', cursive;
+  color: rgb(197, 160, 91);
+  text-shadow: 0 0 1px whitesmoke;
+  border-bottom: 1px solid rgb(197, 160, 91);
+  margin: 0.5rem 0.5rem 2rem;
+}
+
+#contactInfo p {
+  font-size: 1.7rem;
+  font-family: 'Mulish', sans-serif;
+  color: whitesmoke;
+  text-shadow: 0 0 2px rgb(197, 160, 91);
+  margin: 0.5rem 0.5rem 2rem;
+  cursor: default;
+}
+
+#contactInfo a:hover p {
+  color: rgb(197, 160, 91);
+  text-shadow: 0 0 2px whitesmoke;
+  border-bottom: 1px solid rgb(197, 160, 91);
+  cursor: pointer;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+#contactInfo a {
+  text-decoration: none;
+}
+
+#emailSender form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#emailSender form * {
+  padding: 0.5rem 0.2rem;
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  font-family: 'Mulish', sans-serif;
+  color: whitesmoke;
+  border: none;
+  border-bottom: 1px solid whitesmoke;
+  background-color: transparent;
+  outline: none;
+  resize: none;
+}
+
+#emailSender #send {
+  padding: 1rem 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(197, 160, 91);
+  border: 1px solid rgb(197, 160, 91);
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: all 0.5s;
+}
+
+#emailSender #send:hover {
+  background-color: rgb(197, 160, 91);
+  color: rgb(22, 18, 18);
+}
+
+#numberFont {
+  font-weight: 700;
+}
+
+#contactMaps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70%;
+  width: 60%;
+  margin-top: 10rem;
+}
+
+#map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid rgb(197, 160, 91);
+  box-shadow: 0 0 7px 2px rgba(197, 160, 91, 0.7);
+  border-radius: 5px;
+  z-index: 1;
+  animation: insertItem 0.7s linear 1 forwards;
+}
+
+footer div {
+  position: fixed;
+  box-sizing: border-box;
+  overflow: hidden;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 1rem 0.5rem;
+  text-align: center;
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  background-color: rgba(236, 81, 81, 0.3);
+}
