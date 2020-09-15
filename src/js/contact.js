@@ -1,4 +1,4 @@
-export const contact = (() => {
+const contact = () => {
   const content = document.createElement('div');
   content.setAttribute('id', 'contactContent');
 
@@ -10,20 +10,20 @@ export const contact = (() => {
   const itemOne = document.createElement('div');
   itemOne.classList.add('contactItem');
   const p1 = document.createElement('p');
-  p1.innerHTML = `72 Fani Kayode Street<br> Ikeja GRA, Lagos.`;
+  p1.innerHTML = '72 Fani Kayode Street<br> Ikeja GRA, Lagos.';
   itemOne.appendChild(p1);
 
   const itemTwo = document.createElement('div');
   itemTwo.classList.add('contactItem');
   const p2 = document.createElement('p');
-  p2.innerHTML = `<strong class='name'>Sun-Thurs:</strong> 9am-9pm <br><strong class='name'>Fri-Sun: </strong> 12pm-6pm `;
+  p2.innerHTML = '<strong class=\'name\'>Sun-Thurs:</strong> 9am-9pm <br><strong class=\'name\'>Fri-Sun: </strong> 12pm-6pm ';
   itemTwo.appendChild(p2);
 
   const itemThree = document.createElement('div');
   itemThree.classList.add('contactItem');
   const p3 = document.createElement('p');
   p3.setAttribute('id', 'numberFont');
-  p3.textContent = `333.545.232`;
+  p3.textContent = '333.545.232';
   itemThree.appendChild(p3);
 
   const itemFour = document.createElement('div');
@@ -85,11 +85,13 @@ export const contact = (() => {
   contactMaps.setAttribute('id', 'contactMaps');
   const map = document.createElement('div');
   map.setAttribute('id', 'map');
-  map.innerHTML = `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.5760673018394!2d3.3514878147709815!3d6.575063595244777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b920dd121957b%3A0xca91e3d5938c14af!2sRemi%20Fani-Kayode%20Ave%2C%20Ikeja%20GRA%2C%20Lagos!5e0!3m2!1sen!2sng!4v1600072884661!5m2!1sen!2sng" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>`;
+  map.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.5760673018394!2d3.3514878147709815!3d6.575063595244777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b920dd121957b%3A0xca91e3d5938c14af!2sRemi%20Fani-Kayode%20Ave%2C%20Ikeja%20GRA%2C%20Lagos!5e0!3m2!1sen!2sng!4v1600072884661!5m2!1sen!2sng" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>';
   contactMaps.appendChild(map);
 
   content.appendChild(contactInfo);
   content.appendChild(contactMaps);
 
   return content;
-})();
+};
+
+export default contact();

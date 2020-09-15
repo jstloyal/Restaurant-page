@@ -1,4 +1,4 @@
-export const home = (() => {
+const home = () => {
   const homePage = document.createElement('div');
   homePage.setAttribute('id', 'mySlogan');
   const myMotto = document.createElement('h1');
@@ -13,4 +13,6 @@ export const home = (() => {
   info.appendChild(paragraph);
   homePage.appendChild(info);
   return homePage;
-})();
+};
+
+export default home();

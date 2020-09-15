@@ -1,5 +1,7 @@
-*, *::after, *::before{
-    box-sizing: border-box;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
 html {
@@ -10,10 +12,8 @@ body {
   margin: 0;
   padding: 0;
   background-image: url('/images/background.jpg');
-  background-position: cover;
   background-position: center;
   background-size: cover;
-  /* background-attachment: fixed; */
 }
 
 h1 {
@@ -25,17 +25,6 @@ h1 {
   background-color: rgba(0, 0, 0, 0.7);
   animation: insert 1s linear 1 forwards;
   text-shadow: 0 0 8px rgb(197, 160, 91);
-}
-
-@@keyframes insert {
-  0% {
-    transform: translateX(-50%) scale(0.7);
-    opacity: 0.3;
-  }
-  100% {
-    transform: translateX(0%) scale(1%);
-    opacity: 1;
-  }
 }
 
 #mySlogan {
@@ -53,6 +42,12 @@ h1 {
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 5px;
   width: 50rem !important;
+}
+
+.menuItem:hover p,
+.menuItem:hover .price {
+  color: whitesmoke;
+  text-shadow: 0 0 5px rgb(197, 160, 91);
 }
 
 #homeInfo p {
@@ -91,7 +86,6 @@ nav li {
   cursor: pointer;
 }
 
-/******about**************/
 #aboutContent {
   position: relative;
   flex: 1;
@@ -116,7 +110,11 @@ nav li {
   justify-content: start;
   margin: auto 2rem;
   z-index: 3;
-  padding: 0rem 3rem 2rem;
+  padding: 0 3rem 2rem;
+}
+
+.menuItem:hover h2 {
+  color: rgb(218, 156, 42);
 }
 
 #aboutText h2 {
@@ -128,11 +126,20 @@ nav li {
   border-bottom: 3px solid rgb(197, 160, 91);
 }
 
+#contactInfo h2 {
+  font-size: 3rem;
+  font-family: 'Rowdies', cursive;
+  color: rgb(197, 160, 91);
+  text-shadow: 0 0 1px whitesmoke;
+  border-bottom: 2px solid rgb(197, 160, 91);
+  margin-left: 0;
+}
+
 #aboutText h2:hover {
   color: rgb(218, 156, 42);
-  text-shadow: 0 0 1px whitesmoke ;
+  text-shadow: 0 0 1px whitesmoke;
   border-bottom: 2px solid rgb(230, 115, 115);
-  cursor: default;
+  cursor: pointer;
 }
 
 #aboutText p {
@@ -143,8 +150,8 @@ nav li {
   color: whitesmoke;
   text-shadow: 0 0 2px rgb(197, 160, 91);
   animation: insertItem 0.7s linear 1 forwards;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 #aboutImg {
@@ -155,10 +162,10 @@ nav li {
   align-content: center;
   justify-content: center;
   margin: auto 2rem;
-  padding-left: 0px;
-  padding-right: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 #kitchen {
@@ -178,37 +185,34 @@ nav li {
   z-index: 100;
 }
 
-#meal{
-    position: absolute;
-    top: 34rem;
-    right: 20rem;
-    width: 33rem;
-    height: 43rem;
-    z-index: 2;
-    border-radius: 2px;
-    box-shadow: 0 0 7px 1px rgba(197, 160, 91, 0.5);
-    animation: imgBottomInsert 0.8s linear 1 forwards;
-    cursor: pointer;
-
+#meal {
+  position: absolute;
+  top: 34rem;
+  right: 20rem;
+  width: 33rem;
+  height: 43rem;
+  z-index: 2;
+  border-radius: 2px;
+  box-shadow: 0 0 7px 1px rgba(197, 160, 91, 0.5);
+  animation: imgBottomInsert 0.8s linear 1 forwards;
+  cursor: pointer;
 }
 
 #meal:hover {
-    z-index: 100;
-    box-shadow: 0 0 10px 1px rgba(197, 160, 91, 0.75);
+  z-index: 100;
+  box-shadow: 0 0 10px 1px rgba(197, 160, 91, 0.75);
 }
 
-/************scrollbar**************/
-
-::-webkit-scrollbar{
-    width: 1rem;
-}
-::-webkit-scrollbar-thumb{
-    background: linear-gradient(transparent, rgb(197, 160, 91));
-    border-radius: 5px;
+::-webkit-scrollbar {
+  width: 1rem;
 }
 
-/***********menu****************/
-#menuContent{
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, rgb(197, 160, 91));
+  border-radius: 5px;
+}
+
+#menuContent {
   overflow: auto;
   width: 75%;
   height: 100vh;
@@ -222,7 +226,7 @@ nav li {
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
 }
 
-#menu{
+#menu {
   width: 50%;
   height: 80%;
   display: flex;
@@ -239,7 +243,7 @@ nav li {
   flex-direction: column;
   align-items: flex-start;
   justify-content: start;
-  padding: 0rem 2rem 2rem;
+  padding: 0 2rem 2rem;
   margin-top: -2.5rem;
 }
 
@@ -247,12 +251,12 @@ nav li {
   list-style: none;
   padding: 2rem;
   margin: 1rem;
-  color: #CCCCCC;
+  color: #ccc;
   text-align: right;
   font-family: 'Lato', sans-serif;
   font-size: 2rem;
   cursor: pointer;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 #menu li:hover {
@@ -264,14 +268,14 @@ nav li {
   color: whitesmoke;
   text-shadow: 0 0 5px rgb(197, 160, 91);
   border-bottom: 1px solid #fc0000;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 #menuItems {
   width: 60%;
   height: 80%;
   margin: 0 3rem;
-  padding: 0rem 5rem 3rem 5rem;
+  padding: 0 5rem 3rem 5rem;
   border-radius: 5px;
   color: whitesmoke;
 }
@@ -287,38 +291,12 @@ nav li {
   animation: insertItem 0.7s linear 1 forwards;
 }
 
-/********item-hover**************/
 .menuItem:hover .menuItemHeader {
   color: rgb(218, 156, 42);
-  text-shadow: 0 0 1px whitesmoke ;
+  text-shadow: 0 0 1px whitesmoke;
   border-bottom: 1px solid rgb(230, 115, 115);
 }
 
-.menuItem:hover h2 {
-  color: rgb(218, 156, 42);
-}
-
-.menuItem:hover p, .menuItem:hover .price {
-  color: whitesmoke;
-  text-shadow: 0 0 5px rgb(197, 160, 91) ;
-}
-
-@keyframes insertItem {
-  0%{
-      transform: translateY(50%);
-      opacity: 0.3;
-  }
-  50%{
-      transform: translateY(25%);
-      opacity: 0.7;
-  }
-  100%{
-      transform: translateY(0);
-      opacity: 1;
-  }
-}
-
-/************contact****************/
 #contactContent {
   position: relative;
   overflow: auto;
@@ -343,7 +321,6 @@ nav li {
   justify-content: start;
   height: 80%;
   width: 30%;
-  /* background-color: rgb(91, 91, 207); */
   margin-left: 1rem;
 }
 
@@ -360,7 +337,7 @@ nav li {
 }
 
 #message {
-  margin-bottom: 0rem;
+  margin-bottom: 0;
 }
 
 .icon {
@@ -371,15 +348,6 @@ nav li {
 .icon img {
   width: 1.6rem;
   height: 1.6rem;
-}
-
-#contactInfo h2 {
-  font-size: 3rem;
-  font-family: 'Rowdies', cursive;
-  color: rgb(197, 160, 91);
-  text-shadow: 0 0 1px whitesmoke;
-  border-bottom: 2px solid rgb(197, 160, 91);
-  margin-left: 0px;
 }
 
 #contactInfo h3 {
@@ -407,6 +375,16 @@ nav li {
   cursor: pointer;
 }
 
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: white;
+}
+
 #contactInfo a {
   text-decoration: none;
 }
@@ -416,8 +394,8 @@ nav li {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  margin-left: 0px;
-  padding-left: 0px;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 #emailSender form * {
@@ -433,7 +411,7 @@ nav li {
   resize: none;
 }
 
-#emailSender #send{
+#emailSender #send {
   padding: 1rem 1rem;
   font-size: 2rem;
   font-weight: 600;
@@ -444,7 +422,7 @@ nav li {
   transition: all 0.5s;
 }
 
-#emailSender #send:hover{
+#emailSender #send:hover {
   background-color: rgb(197, 160, 91);
   color: rgb(22, 18, 18);
 }
@@ -452,17 +430,16 @@ nav li {
 #numberFont {
   font-weight: 700;
 }
-/************map*************/
+
 #contactMaps {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 70%;
   width: 60%;
-  /* background-color: red; */
   margin-top: 10rem;
-
 }
+
 #map {
   display: flex;
   align-items: center;
@@ -474,7 +451,6 @@ nav li {
   animation: insertItem 0.7s linear 1 forwards;
 }
 
-/********footer*******/
 footer div {
   position: fixed;
   box-sizing: border-box;
@@ -488,14 +464,4 @@ footer div {
   color: rgb(255, 255, 255);
   font-weight: 600;
   background-color: rgba(236, 81, 81, 0.3);
-}
-
-footer a {
-  text-decoration: none;
-  color: white;
-}
-
-footer a:hover {
-  text-decoration: none;
-  color: white;
 }

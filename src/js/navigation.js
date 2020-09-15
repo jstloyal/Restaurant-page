@@ -1,11 +1,11 @@
-export const navbar = (() => {
+const navbar = () => {
   const navigationMenu = document.createElement('nav');
   navigationMenu.setAttribute('id', 'mainNav');
   const ul = document.createElement('ul');
   const listOne = document.createElement('li');
   listOne.textContent = 'Home';
   listOne.setAttribute('id', 'homeList');
-  listOne.setAttribute('class', 'active')
+  listOne.setAttribute('class', 'active');
   const listTwo = document.createElement('li');
   listTwo.textContent = 'Menu';
   listTwo.setAttribute('id', 'menuList');
@@ -22,4 +22,6 @@ export const navbar = (() => {
   ul.appendChild(listFour);
   navigationMenu.appendChild(ul);
   return navigationMenu;
-})();
+};
+
+export default navbar();

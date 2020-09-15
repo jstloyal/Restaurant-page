@@ -1,4 +1,4 @@
-export const about = (() => {
+const about = () => {
   const section = document.createElement('section');
   section.setAttribute('id', 'aboutContent');
 
@@ -33,4 +33,6 @@ export const about = (() => {
   section.appendChild(aboutImages);
 
   return section;
-})();
+};
+
+export default about();
